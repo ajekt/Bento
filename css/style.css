@@ -3,6 +3,8 @@
 /* V A R I A B L E S */
 
 :root {
+  --color0: #051017;
+  --color7: #EBB2AB;
   /* Fonts  */
   --fsg: 135px; /* Time and Greetings */
   --fsm: 75px; /* Date */
@@ -10,17 +12,17 @@
   --fses: 16px; /* Links List */
 
   /* Light theme  */
-  --accent: #4b8ec4; /* Hover color */
-  --bg: #f5f5f5; /* Background color */
-  --sbg: #e4e6e6; /* Cards color */
-  --fg: #3a3a3a; /* Foreground color */
-  --sfg: #3a3a3a; /* Sceondary Foreground color */
+  --accent: var(--color0); /* Hover color */
+  --bg: var(--color7); /* Background color */
+  --sbg: var(--color7); /* Cards color */
+  --fg: var(--color0); /* Foreground color */
+  --sfg: var(--color7); /* Sceondary Foreground color */
 
   /* Image background  */
 
-  /* Uncoment this section to get the 
-    image wallpaper. You can also 
-    change the --imgcol value 
+  /* Uncoment this section to get the
+    image wallpaper. You can also
+    change the --imgcol value
     to make the filter to your own */
 
   /* --imgbg: url(/img/wal.jpg); */
@@ -32,11 +34,11 @@
 
 /* Dark theme  */
 .darktheme {
-  --accent: #4b8ec4; /* Hover color */
-  --bg: #19171a; /* Background color */
-  --sbg: #201e21; /* Cards color */
-  --fg: #d8dee9; /* Foreground color */
-  --sfg: #3a3a3a; /* Secondary Foreground color */
+  --accent: var(--color7); /* Hover color */
+  --bg: var(--color0); /* Background color */
+  --sbg: var(--color0); /* Cards color */
+  --fg: var(--color7); /* Foreground color */
+  --sfg: var(--color0); /* Secondary Foreground color */
   --imgcol: linear-gradient(
     rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.7)
@@ -101,7 +103,7 @@ body {
 
 .timeBlock {
   grid-row: 1 / span 2;
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 4;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,12 +180,14 @@ body {
 
 .buttonLink {
   grid-row: 3 / span 2;
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 4;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 30px;
   padding: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .buttonLink__link {
