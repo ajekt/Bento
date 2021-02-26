@@ -186,8 +186,6 @@ body {
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 30px;
   padding: 20px;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 
 .buttonLink__link {
