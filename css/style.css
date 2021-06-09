@@ -3,8 +3,8 @@
 /* V A R I A B L E S */
 
 :root {
-  --color0: #051017;
-  --color7: #EBB2AB;
+  --color0: #fff;
+  --color7: #000;
   /* Fonts  */
   --fsg: 135px; /* Time and Greetings */
   --fsm: 75px; /* Date */
